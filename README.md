@@ -1,2 +1,3 @@
 # M06_EAF3_Git
- Exercici de creacio de reporitori
+ Exercici de creacio de repositori
+ 
