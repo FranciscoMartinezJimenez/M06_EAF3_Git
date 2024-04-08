@@ -1,13 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Icons-->
+    <script src="https://kit.fontawesome.com/37532f53cc.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Titol videojoc</h1>
-    <p>Al contingut central de la pagina de inici a de mostrar la info mes destacada del videojoc</p>
+    
+    <header class="header">
+
+        <div class="menu container">
+            <a href="#" class="logo" >Nom del videojoc</a>
+            <h1>Nom del videojoc</h1>
+            <input type="checkbox" id="menu" >
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li> <a href="#">Inici</a></li>
+                    <li> <a href="#">Sobre el videojoc</a></li>
+                    <li> <a href="#">Contacte</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="general container">
+        <h2>Inici</h2>
+        <div class="general-content">
+            <div class="general-1 txt">
+                <img src="images/func.png" alt="">
+                <h3>Informació del videojoc</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                   Perspiciatis molestiae totam ex provident et sint accusantium 
+                   ea repudiandae dolorum necessitatibus expedita natus deleniti, 
+                   veniam minus, magni maxime atque, vel odit.
+                </p>
+                <a href="#" class="btn-1">Com funciona</a>
+
+            <div class="general-2 txt">
+                <h3>Informació del videojoc</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                       Perspiciatis molestiae totam ex provident et sint accusantium 
+                       ea repudiandae dolorum necessitatibus expedita natus deleniti, 
+                       veniam minus, magni maxime atque, vel odit.
+                </p>
+                <a href="#" class="btn-2">Veure catàleg</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="grup-1">
+            <div class="box">
+                <h1>Nom del videojoc</h1>
+                <p>correu electronic</p>
+                <p>telèfon</p>
+                <p>direcció</p>
+            </div>
+            <div class="box">
+                <nav class="navbar">
+                    <ul>
+                        <li> <a href="#">autor</a></li>
+                        <li> <a href="#">data</a></li>
+                        <li> <a href="#">Contacte</a></li>
+                        <li> <a href="#">altres informacions</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+            
+               
+            </div>
+        </div>
+        <div class="grup-2">
+            <div class="box">
+                <small>&copy; 2024 <b>Francesc Martínez Jiménez</b> - Tots els drets reservats.</small>
+
+            </div>
+            <div class="box">
+                <small> segueix-nos en xarxes</small>
+                <div class="xarxa-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    
+                </div>
+            
+            </div>
+            
+            
+        </div>
+    </footer>
     
 </body>
 </html>
