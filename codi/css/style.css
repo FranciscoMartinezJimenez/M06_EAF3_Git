@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/*
+font-family: "Montserrat", sans-serif;
+font-family: "Open Sans", sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+    
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: linear-gradient(
+        rgba(0178,219,213,0.7),
+        rgba(178,219,213,0.7)),
+        url(images/menuBg.png);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 50vh;
+        display: flex;
+        align-items: center;
+}
+
+.menu .logo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.menu .logo img a:hover {
+    color: #3A7E89;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 20px;
+    color: #000000;
+    display: block;
+    
+}
+
+.menu .navbar ul li a:hover {
+    color: #FA8D62;
+    font-weight: 700;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content h1 {
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 80px;
+    color: #2B616D;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    display: flex;   
+}
+
+
+
+
+.btn-1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    display: inline-block;
+    padding: 11px 35px;
+    color: #000000;
+    text-transform: none;
+    background-color: #FA8D62;
+    border-radius: 6px;
+}
+
+.btn-1:hover {
+    font-weight: 500;
+    background-color: #F4A88E;
+}
+
+.general {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.general-1 {
+    width: 50%;
+    padding: 100px 250px 100px 0px;
+    background-color: white;
+}
+
+.general-2 {
+    background-image: url(images/coffe-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.general-3 {
+    background-image: url(images/coffe-2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 44px;
+    color: #2B616D;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #707070; 
+}
+
+.footer {
+    padding: 100px 0;
+    background-color: #0F1F38;
+}
+
+.footer .grup-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0;
+}
+
+.footer .grup-1 .box-1 .logo {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .grup-1 .box-1 .logo img {
+    width: 150px;
+}
+
+.footer .grup-1 .box-1 p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: white;    
+}
+
+.footer .grup-1 .box-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .grup-1 .box-2 .navbar ul li a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 20px;
+    color: white;
+    display: block;  
+}
+
+.footer .grup-1 .box-2 .navbar ul li a:hover {
+    color: #FA8D62;
+    font-weight: 700;
+}
+
+.footer .grup-2 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0;
+}
+
+.footer .grup-2 .box-3 small {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    padding: 20px 0;
+    color: white;
+    display: block;
+}
+
+.footer .grup-2 .box-4 small {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    padding: 20px 0;
+    color: white;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .grup-2 .box-4 .xarxa-social a {
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .grup-2 .box-4 .xarxa-social a:hover {
+    color: #FA8D62;
+}
+
+hr {
+    color: white;    
+}
+
+@media(max-width:991px) {
+
+    .menu {
+        padding: 30px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #3A7E89;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header {
+        min-height: 0vh;
+    }
+
+    .header-content {
+        padding: 100px 30px;
+    }
+
+    .header-content p {
+        padding: 0;
+    }
+
+    .general {
+        padding: 30px;
+    }
+
+    h2 {
+        padding: 0;
+    }
+
+    p {
+        padding: 0;
+    }
+
+    .general {
+        flex-direction: column;
+    }
+
+    .general-1 {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .general-2 {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .general-3 {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .footer {
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+}
