@@ -21,6 +21,7 @@
             </label>
 
             <nav class="navbar">
+                <!-- menú clicable que ens porta a les seguents pàgines -->
                 <ul>
                     <li><a href="#">Inici</a></li>
                     <li><a href="#">Sobre el videojoc</a></li>
@@ -36,8 +37,88 @@
     </header>
 
     <section class="general">
+<!-- formulari de contacte -->
+        <form>
 
-        
+            <h2>Contacta'ns</h2>
+
+            <div class="input-group">
+                <div class="input-field">
+                    <!-- nom i cognoms -->
+                <label for="name">Nom i cognoms</label>
+                <input type="text" name="name" id="name" placeholder="Nom i cognoms">
+                </div>
+
+                <div class="input-field">
+                    <!-- adreça -->
+                <label for="address">Adreça</label>
+                <input type="text" name="address" id="address" placeholder="Adreça">
+                </div>
+                
+                <div class="input-field">
+                    <!-- ciutat en llista de selecció -->
+                <select name="ciutat" id="">
+                    <script>
+                        //Mitjantçant Array unimendional
+                        var c;
+                        var ciutats = ['Alella', 'Arenys de Mar', 'Arenys de Munt', 'Argentona', 'Cabrera de Mar', 'Cabrils', 'Caldes de Estrac', 'Calella', 'Canet de Mar', 'Dosrius',
+                    'Malgrat de MAr', 'Mataró', 'Montgat', 'Palafolls', 'Pineda de Mar', 'Paremià de Dalt', 'Premià de Mar', 'Sant Andreu de Llavaneres', 'Sant Cebrià de Vallalta', 'Sant Iscle de Vallalta',
+                'Sant Pol de Mar', 'Sant Vicenç de Montalt', 'Santa Susanna', 'Teià', 'Tiana', 'Tordera', 'Vilassar de Dalt', 'Vilassar de Mar', 'el Masnou', 'Òrrius'];
+                for(c=0; c<ciutats.length; c++){
+                    document.write("<option>" + ciutats[c] + "</option>");
+                }
+                    </script>
+                    <option selected>-Ciutat-</option>
+                </select>
+                </div>
+
+                <div class="input-field">
+                    <!-- data de neixament -->
+                <label for="date">Data de naixement</label>
+                <input type="date" name="date" id="date" placeholder="Data de naixement">
+                </div>
+
+                <div class="input-field">
+                    <!-- sexe -->
+                <p>Gènere</p>
+                <label for="female">Femení
+                    <input type="radio" name="gender" value="female">
+                </label>
+                <label for="male">Masculí
+                    <input type="radio" name="gender" value="male">
+                </label>
+                <label for="stranger">Prefereixo no dir-ho
+                    <input type="radio" name="gender" value="stranger">
+                </label>
+                </div>
+
+                <div class="input-field">
+                    <!-- correu electrònic -->
+                <label for="email">Correu electrònic</label>
+                <input type="email" name="email" id="email" placeholder="Correu electrònic">
+                </div>
+                
+                <div class="input-field">
+                    <!-- contrassenya -->
+                <label for="password">Contrasenya</label>
+                <input type="password" name="password" id="password" placeholder="Contrasenya">
+                </div>
+
+                <div class="input-field">
+                    <label for="password">Confirma contrasenya</label>
+                <input type="password" name="password" id="password" placeholder="Confirma contrasenya">
+                </div>
+                    
+                <div class="input-field">
+                    <!-- acceptació de les condicons -->
+                <label>
+                    Accepto les condicions
+                    <input type="checkbox" name="accept" value="accept">
+                </label>
+                </div>
+
+            </div>
+        </form>
     </section>
 
 
