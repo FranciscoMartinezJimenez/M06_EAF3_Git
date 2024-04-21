@@ -204,10 +204,21 @@ input {
     border: 2px solid #FA8D62;
     margin-bottom: 30px;
     outline: none;
-    color: #000000;
+    color: #707070;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 24px;
+}
+
+input:hover {
+    font-weight: 500;
+    background-color: #CBEFE9;
+}
+
+input:focus {
+    border: 2px solid #707070;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(0, 0, 0, 0.2);
 }
 
 ::placeholder {
@@ -221,14 +232,15 @@ select {
     border: 2px solid #FA8D62;
     margin-bottom: 30px;
     outline: none;
-    color: #000000;
+    color: #707070;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 24px;
 }
 
-option {
-    color: #707070;
+select:hover {
+    font-weight: 500;
+    background-color: #CBEFE9;
 }
 
 label {
@@ -251,6 +263,46 @@ form a {
 form a:hover {
     color: #FA8D62;
     font-weight: 700;
+}
+
+/*missatges camps erronis*/
+
+.form__input-error {
+    font-size: 16px;
+    margin-bottom: 0;
+    display: none;
+}
+
+.form__input-error-active {
+    display: block;
+}
+
+.form__messaje {
+    height: 45px;
+    line-height: 45px;
+    background: crimson;
+    padding: 0 15px;
+    border-radius: 2px;
+    display: none;
+}
+
+.form__messaje-active {
+    display: block;
+}
+
+.form__messaje p {
+    color: #000000;
+}
+
+/*missatge enviat correctament*/
+
+.form__messaje-exit {
+    color: darkgreen;
+    display: none;
+}
+
+.form__messaje-exit-active {
+    display: block;
 }
 
 /*estil general del peu de pàgina*/

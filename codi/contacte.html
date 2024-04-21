@@ -43,17 +43,19 @@
             <h2>Contacta'ns</h2>
 
             <div class="input-group">
-                <div class="input-field">
+                <div class="input-field" id="group_name">
                     <!-- nom i cognoms -->                
-                <input type="text" name="name" id="name" placeholder="Nom i cognoms">
+                <input type="text" class="form__input" name="name" id="name" placeholder="Nom i cognoms">
+                <p class="form__input-error">*El nom només pot contenir lletres</p>
                 </div>
 
-                <div class="input-field">
+                <div class="input-field" id="group_address">
                     <!-- adreça -->                
-                <input type="text" name="address" id="address" placeholder="Adreça">
+                <input type="text" class="form__input" name="address" id="address" placeholder="Adreça">
+                <p class="form__input-error">*Ha de contenir adreça</p>
                 </div>
                 
-                <div class="input-field">
+                <div class="input-field" id="group_ciutat">
                     <!-- ciutat en llista de selecció -->
                 <select name="ciutat" id="">
                     <script>
@@ -70,13 +72,14 @@
                 </select>
                 </div>
 
-                <div class="input-field">
+                <div class="input-field" id="group_date">
                     <!-- data de neixament -->
-                <p>Data de naixement</p>               
-                <input type="date" name="date" id="date" placeholder="Data de naixement">
+                <p>Data de neixement</p>               
+                <input type="date" class="form__input" name="date" id="date" placeholder="Data de neixement">
+                <p class="form__input-error">*Ha de omplenar data neixament</p>
                 </div>
 
-                <div class="input-field">
+                <div class="input-field" id="group_gender">
                     <!-- sexe -->
                 <p>Gènere</p>
                 <label for="female">Femení
@@ -90,31 +93,43 @@
                 </label>
                 </div>
 
-                <div class="input-field">
+                <div class="input-field" id="group_email">
                     <!-- correu electrònic -->               
-                <input type="email" name="email" id="email" placeholder="Correu electrònic">
+                <input type="email" class="form__input" name="email" id="email" placeholder="Correu electrònic">
+                <p class="form__input-error">*Ha de ser un correu vàlid</p>
                 </div>
                 
-                <div class="input-field">
+                <div class="input-field" id="group_password">
                     <!-- contrassenya -->               
-                <input type="password" name="password" id="password" placeholder="Contrasenya">
+                <input type="password" class="form__input" name="password" id="password" placeholder="Contrasenya">
+                <p class="form__input-error">*La contrasenya a de contenir lleteres i numeros</p>
                 </div>
 
-                <div class="input-field">
+                <div class="input-field" id="group_password-repeat">
                     <!-- confirma contrasenya -->                    
-                <input type="password" name="password" id="password" placeholder="Confirma contrasenya">
+                <input type="password" class="form__input" name="password" id="password" placeholder="Confirma contrasenya">
+                <p class="form__input-error">*La contrasenya a de ser igual</p>
                 </div>
                     
-                <div class="input-field">
+                <div class="input-field" id="group_accept">
                     <!-- acceptació de les condicons -->
                 <label>
                     <a href="#">Accepto les condicions</a>
-                    <input type="checkbox" name="accept" value="accept">
+                    <input type="checkbox" class="form__input" name="accept" value="accept">
+                    <p class="form__input-error">*Ha d'acceptar les condicions</p>
                 </label>
                 </div>
 
-                <input type="submit" name="send" class="btn-1" value="Enviar">
+                <div class="form__messaje" id="form__messaje">
+                    <p><i class="fa fa-exclamation-triangle"></i><b> Error:</b> Siusplau omplena tots els camps</p>
 
+                </div>
+
+                <div class="input-field">
+                    <input type="submit" name="send" class="btn-1" value="Enviar">
+                    <p class="form__messaje-exit" id="form__messaje-exit">Formulari enviat correctament!</p>
+                </div>
+                
             </div>
         </form>
     </section>
