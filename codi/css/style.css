@@ -176,14 +176,14 @@ p {
 
 /*estil del contingut general de la pàgina "contacte"*/
 
-.general-form {
+.general-formulari {
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
     padding: 100px 190px 100px 190px;
 }
 
-form {
+.formulari {
     background-color: #B2DBD5;
     display: flex;
     flex-direction: column;
@@ -193,7 +193,7 @@ form {
     text-align: center;
 }
 
-form h2 {
+.formulari h2 {
     margin-bottom: 35px;
 }
 
@@ -251,7 +251,7 @@ label {
     color: #707070;
 }
 
-form a {
+.formulari a {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 24px;
@@ -260,24 +260,24 @@ form a {
     
 }
 
-form a:hover {
+.formulari a:hover {
     color: #FA8D62;
     font-weight: 700;
 }
 
 /*missatges camps erronis*/
 
-.form__input-error {
+.formulari__input-error {
     font-size: 16px;
     margin-bottom: 0;
     display: none;
 }
 
-.form__input-error-active {
+.formulari__input-error-active {
     display: block;
 }
 
-.form__messaje {
+.formulari__messaje {
     height: 45px;
     line-height: 45px;
     background: crimson;
@@ -286,23 +286,31 @@ form a:hover {
     display: none;
 }
 
-.form__messaje-active {
+.formulari__messaje-active {
     display: block;
 }
 
-.form__messaje p {
+.formulari__messaje p {
     color: #000000;
 }
 
 /*missatge enviat correctament*/
 
-.form__messaje-exit {
+.formulari__messaje-exit {
     color: darkgreen;
     display: none;
 }
 
-.form__messaje-exit-active {
+.formulari__messaje-exit-active {
     display: block;
+}
+
+.formulari__grup-correcto .formulari__input {
+    border: 2px solid green;
+}
+
+.formulari__grup-incorrecto .formulari__input {
+    border: 2px solid red;
 }
 
 /*estil general del peu de pàgina*/
@@ -483,9 +491,17 @@ hr {
         text-align: center;
     }
 
+    /* responsive formulari*/
+
+    .general-formulari {
+        padding: 45px 0;
+
+    }
+
     .footer {
-        padding: 30px;
+        padding: 25px;
         flex-direction: column;
         text-align: center;
     }
 }
+
