@@ -28,10 +28,7 @@ body {
 /*estil general del encapçalament de totes les pàgines*/
 
 .header {
-    background-image: linear-gradient(
-        rgba(0178,219,213,0.7),
-        rgba(178,219,213,0.7)),
-        url(images/menuBg.png);
+        background-color: #B2DBD5;
         background-position: center bottom;
         background-repeat: no-repeat;
         background-size: cover;
@@ -136,6 +133,7 @@ body {
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 30px;
 }
 
 .general-1 {
@@ -145,33 +143,49 @@ body {
 }
 
 .general-2 {
-    background-image: url(images/coffe-1.jpg);
+    background-color: white;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 50px 0px 100px 0px;
+    display: flex;
     width: 50%;
 }
 
+.general-2 img {
+    height: 449px;
+    width: 600px;
+    display: flex;
+}
+
 .general-3 {
-    background-image: url(images/coffe-2.jpg);
+    background-color: white;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 150px 30px 100px 0px;
+    display: flex;
     width: 50%;
+}
+
+.general-3 img {
+    height: 129px;
+    width: 248px;
+    display: flex;
 }
 
 h2 {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 44px;
-    color: #2B616D;
+    color: #2B616D;   
 }
 
 p {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 24px;
-    color: #707070; 
+    color: #707070;
 }
 
 /*estil del contingut general de la pàgina "contacte"*/
@@ -471,6 +485,7 @@ hr {
 
     .general {
         flex-direction: column;
+        padding: 30px;
     }
 
     .general-1 {
@@ -479,22 +494,30 @@ hr {
         text-align: center;
     }
 
-    .general-2 {
-        width: 100%;
-        padding: 30px;
-        text-align: center;
+    .general-2, .general-3 {
+        display: flex;
+        
     }
 
-    .general-3 {
-        width: 100%;
-        padding: 30px;
-        text-align: center;
+    .general-2 img {
+        flex-direction: column;
+        width: 400px;
+        height: 300px;
+        align-items: center;       
+    }
+
+    .general-3 img {
+        flex-direction: column;
+        width: 248px;
+        height: 129px;
+        align-items: center; 
+              
     }
 
     /* responsive formulari*/
 
     .general-formulari {
-        padding: 45px 0;
+        padding: 0 0;
 
     }
 
