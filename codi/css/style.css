@@ -42,7 +42,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    width: 150px;
+    width: 200px;
     display: flex;
     justify-content: space-between;
     z-index: 1000;
@@ -172,6 +172,32 @@ body {
     height: 129px;
     width: 248px;
     display: flex;
+}
+
+.general-info {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.general-info1 {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: white;
+}
+
+.general-info2 {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: white;
+}
+
+.general-info3 {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: white;
 }
 
 h2 {
@@ -345,7 +371,7 @@ label {
 }
 
 .footer .grup-1 .box-1 .logo {
-    width: 100px;
+    width: 200px;
     height: 100px;
     display: flex;
     justify-content: center;
@@ -353,14 +379,15 @@ label {
 }
 
 .footer .grup-1 .box-1 .logo img {
-    width: 150px;
+    width: 200px;
 }
 
 .footer .grup-1 .box-1 p {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
-    font-size: 24px;
-    color: white;    
+    font-size: 16px;
+    color: white;
+    width: 200px;    
 }
 
 .footer .grup-1 .box-2 {
